@@ -77,7 +77,7 @@ class _RegAppState extends State<RegApp> {
               ElevatedButton(onPressed:(){
                 Navigator.push(context,MaterialPageRoute(builder: (context)=>Qrpage() ) );
               }, child: Text('LOGIN'),
-                style:TextButton.styleFrom(backgroundColor: Colors.blue) ,
+                style:TextButton.styleFrom(backgroundColor: Colors.lime) ,
               ),
 
             ],

@@ -56,7 +56,7 @@ class _State extends State<MyApp> {
               ElevatedButton(onPressed:(){
                 Navigator.push(context,MaterialPageRoute(builder: (context)=> Qrpage() ) );
               }, child: Text('LOGIN'),
-                style:TextButton.styleFrom(backgroundColor: Colors.blue) ,
+                style:TextButton.styleFrom(backgroundColor: Colors.lime) ,
               ),
               SizedBox(
                 height: 30,
@@ -69,7 +69,7 @@ class _State extends State<MyApp> {
                   TextButton(onPressed:(){
                     Navigator.push(context,MaterialPageRoute(builder: (context)=>RegApp() ) );
                   }, child: Text('REGISTRATION'),
-                    style:TextButton.styleFrom(backgroundColor: Colors.greenAccent) ,
+                    style:TextButton.styleFrom(backgroundColor: Colors.greenAccent),
                   ),
                 ],
               ),
