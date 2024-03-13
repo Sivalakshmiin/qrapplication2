@@ -1,5 +1,8 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:qrapplication/registration.dart';
+import 'package:qrapplication/scan.dart';
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -51,10 +54,25 @@ class _State extends State<MyApp> {
                 ),
               ),
               ElevatedButton(onPressed:(){
-                Navigator.push(context,MaterialPageRoute(builder: (context)=> RegApp() ) );
+                Navigator.push(context,MaterialPageRoute(builder: (context)=> Qrpage() ) );
               }, child: Text('LOGIN'),
                 style:TextButton.styleFrom(backgroundColor: Colors.blue) ,
-              )
+              ),
+              SizedBox(
+                height: 30,
+                width: 30,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Do you have an account?'),
+                  TextButton(onPressed:(){
+                    Navigator.push(context,MaterialPageRoute(builder: (context)=>RegApp() ) );
+                  }, child: Text('REGISTRATION'),
+                    style:TextButton.styleFrom(backgroundColor: Colors.greenAccent) ,
+                  ),
+                ],
+              ),
             ],
           ),
         ),

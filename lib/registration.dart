@@ -78,7 +78,8 @@ class _RegAppState extends State<RegApp> {
                 Navigator.push(context,MaterialPageRoute(builder: (context)=>Qrpage() ) );
               }, child: Text('LOGIN'),
                 style:TextButton.styleFrom(backgroundColor: Colors.blue) ,
-              )
+              ),
+
             ],
           ),
         ),
