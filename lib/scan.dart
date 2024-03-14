@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
+import 'package:qrapplication/camera.dart';
 import 'package:qrapplication/login.dart';
 class Qrpage extends StatefulWidget {
   const Qrpage({Key? key}) : super(key: key);
@@ -41,8 +42,8 @@ class _QrpageState extends State<Qrpage> {
                 height: 50,
               ),
               ElevatedButton(onPressed:(){
-                Navigator.push(context,MaterialPageRoute(builder: (context)=>MyApp() ) );
-              }, child: Text('SIGN OUT'),
+                Navigator.push(context,MaterialPageRoute(builder: (context)=>Cam() ) );
+              }, child: Text('scan'),
                 style:TextButton.styleFrom(backgroundColor: Colors.lightGreenAccent) ,
               ),
             ],

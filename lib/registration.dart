@@ -21,7 +21,7 @@ class _RegAppState extends State<RegApp> {
                 width: 100,
                 height: 200,
               ),
-              Text('Login',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color: Colors.red), ),
+              Text('Registration',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color: Colors.red), ),
               SizedBox(
                 width: 50,
                 height: 30,
