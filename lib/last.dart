@@ -29,9 +29,7 @@ class _CamState extends State<Last> {
                 child: TextField(decoration: InputDecoration(
                     filled:true,
                     fillColor: Colors.white,
-                    border: OutlineInputBorder(
-                        borderRadius:BorderRadius.horizontal()
-                    ),
+
                     labelText: 'enter your name'
                 ),
                 ),
@@ -45,13 +43,15 @@ class _CamState extends State<Last> {
                     fillColor: Colors.white,
 
 
-                    border: OutlineInputBorder(
-                        borderRadius:BorderRadius.horizontal()
 
-                    ),
                     labelText: 'enter your email'
                 ),
                 ),
+              ),
+              ElevatedButton(onPressed:(){
+                Navigator.push(context,MaterialPageRoute(builder: (context)=>MyApp() ) );
+              }, child: Text('SIGN OUT'),
+                style:TextButton.styleFrom(backgroundColor: Colors.lime) ,
               ),
             ],
           ),

@@ -23,14 +23,8 @@ class _CamState extends State<Cam> {
             children: [
               SizedBox(
                 width: 100,
-                height: 200,
+                height: 300,
               ),
-              ElevatedButton(onPressed:(){
-                Navigator.push(context,MaterialPageRoute(builder: (context)=>Last() ) );
-              }, child: Text('PROFILE'),
-                style:TextButton.styleFrom(backgroundColor: Colors.lime) ,
-              ),
-
           MobileScanner(
           // fit: BoxFit.contain,
           onDetect: (capture) {
@@ -41,6 +35,15 @@ class _CamState extends State<Cam> {
             }
           },
         ),
+              SizedBox(
+                width: 100,
+                height: 80,
+              ),
+              ElevatedButton(onPressed:(){
+                Navigator.push(context,MaterialPageRoute(builder: (context)=>Last() ) );
+              }, child: Text('PROFILE'),
+                style:TextButton.styleFrom(backgroundColor: Colors.lime) ,
+              ),
             ],
           ),
         ),
