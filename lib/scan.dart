@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:qr_flutter/qr_flutter.dart';
 import 'package:qrapplication/camera.dart';
 import 'package:qrapplication/login.dart';
 class Qrpage extends StatefulWidget {
@@ -31,12 +30,12 @@ class _QrpageState extends State<Qrpage> {
                 width: 100,
                 height: 50,
               ),
-              QrImageView(
-                data: '1234567890',
-                version: QrVersions.auto,
-                backgroundColor: Colors.white,
-                size: 200.0,
-              ),
+              // QrImageView(
+              //   data: '1234567890',
+              //   version: QrVersions.auto,
+              //   backgroundColor: Colors.white,
+              //   size: 200.0,
+              // ),
               SizedBox(
                 width: 100,
                 height: 50,

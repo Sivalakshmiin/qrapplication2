@@ -26,13 +26,17 @@ class _CamState extends State<Last> {
               Container(
                 width: 300,
                 height: 80,
-                child: TextField(decoration: InputDecoration(
+                child: TextField(
+
+                  decoration: InputDecoration(
                     filled:true,
                     fillColor: Colors.white,
 
-                    labelText: 'enter your name'
+
                 ),
+
                 ),
+
               ),
               Container(
                 width: 300,

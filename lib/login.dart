@@ -11,6 +11,9 @@ class MyApp extends StatefulWidget {
 }
 
 class _State extends State<MyApp> {
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+  void App(){print('ertyurfgh');}
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,7 +35,9 @@ class _State extends State<MyApp> {
               Container(
                 width: 300,
                 height: 80,
-                child: TextField(decoration: InputDecoration(
+                child: TextField(
+                  controller:emailController ,
+                  decoration: InputDecoration(
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20)
                     ),
@@ -44,7 +49,9 @@ class _State extends State<MyApp> {
               Container(
                 width: 300,
                 height: 80,
-                child: TextField(decoration: InputDecoration(
+                child: TextField(
+                  controller: passwordController,
+                  decoration: InputDecoration(
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(20)
                     ),
@@ -53,7 +60,7 @@ class _State extends State<MyApp> {
 
                 ),
               ),
-              ElevatedButton(onPressed:(){
+              ElevatedButton(onPressed:(){App();
                 Navigator.push(context,MaterialPageRoute(builder: (context)=> Qrpage() ) );
               }, child: Text('LOGIN'),
                 style:TextButton.styleFrom(backgroundColor: Colors.lime) ,
